@@ -1,20 +1,30 @@
-FROM python:3.11-slim
+FROM node:20-alpine AS base
 
 WORKDIR /app
-
-# System deps for pretty_midi (requires fluidsynth headers for some ops)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY package.json ./
+RUN npm install
 
 COPY . .
 
-# Ensure data dirs exist
-RUN mkdir -p trend-data analytics
+FROM base AS builder
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN npm run build
 
-EXPOSE 8000
+FROM node:20-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
+
+USER nextjs
+EXPOSE 3000
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+
+CMD ["node", "server.js"]
