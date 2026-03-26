@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "rhythm_profiles": [
+    {
+      "id": "raw_kick_pattern",
+      "style": "rawstyle",
+      "weight": 0.9,
+      "subdivision": 16,
+      "kick_pattern": [1,0,0,0, 0,0,0,0, 1,0,0,0, 0,0,0,0],
+      "accent_pattern": [1,0,0,0, 0,0,1,0, 0,0,0,0, 0,1,0,0],
+      "syncopation_factor": 0.4
+    },
+    {
+      "id": "euphoric_offbeat",
+      "style": "euphoric",
+      "weight": 0.75,
+      "subdivision": 16,
+      "kick_pattern": [1,0,0,0, 0,0,1,0, 1,0,0,0, 0,0,0,0],
+      "accent_pattern": [1,0,0,1, 0,0,0,0, 0,0,1,0, 0,0,1,0],
+      "syncopation_factor": 0.3
+    },
+    {
+      "id": "triplet_raw",
+      "style": "rawstyle",
+      "weight": 0.88,
+      "subdivision": 12,
+      "kick_pattern": [1,0,0, 1,0,0, 1,0,0, 1,0,0],
+      "accent_pattern": [1,0,0, 0,1,0, 0,0,1, 0,1,0],
+      "syncopation_factor": 0.5,
+      "notes": "Triplet feel for modern raw"
+    }
+  ]
+}

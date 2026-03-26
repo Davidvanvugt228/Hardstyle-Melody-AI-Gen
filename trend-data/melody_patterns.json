@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "bpm_range": { "min": 150, "max": 170, "typical": 160 },
+  "patterns": [
+    {
+      "id": "raw_aggressive_01",
+      "style": "rawstyle",
+      "energy": "aggressive",
+      "weight": 0.85,
+      "recency_score": 0.9,
+      "interval_pattern": [0, 2, -1, 0, 5, 3, 2, 0],
+      "rhythm_pattern": [1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0],
+      "octave_range": [-1, 1],
+      "notes": "Aggressive descending with quick interval jumps"
+    },
+    {
+      "id": "raw_aggressive_02",
+      "style": "rawstyle",
+      "energy": "aggressive",
+      "weight": 0.8,
+      "recency_score": 0.85,
+      "interval_pattern": [0, -2, 0, 3, 0, -1, 0, 5],
+      "rhythm_pattern": [1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0],
+      "octave_range": [-1, 0],
+      "notes": "Syncopated raw feel with upward punches"
+    },
+    {
+      "id": "euphoric_lead_01",
+      "style": "euphoric",
+      "energy": "high",
+      "weight": 0.75,
+      "recency_score": 0.8,
+      "interval_pattern": [0, 2, 4, 5, 4, 2, 0, 7],
+      "rhythm_pattern": [1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0],
+      "octave_range": [0, 1],
+      "notes": "Ascending euphoric line with octave jump"
+    },
+    {
+      "id": "euphoric_lead_02",
+      "style": "euphoric",
+      "energy": "medium",
+      "weight": 0.7,
+      "recency_score": 0.75,
+      "interval_pattern": [0, 3, 5, 7, 5, 3, 2, 0],
+      "rhythm_pattern": [1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0],
+      "octave_range": [0, 1],
+      "notes": "Classic euphoric arpeggio pattern"
+    },
+    {
+      "id": "raw_dark_01",
+      "style": "rawstyle",
+      "energy": "dark",
+      "weight": 0.88,
+      "recency_score": 0.92,
+      "interval_pattern": [0, -1, -3, 0, -1, 0, -5, -3],
+      "rhythm_pattern": [1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1],
+      "octave_range": [-2, 0],
+      "notes": "Dark descending raw pattern with minor intervals"
+    },
+    {
+      "id": "raw_dark_02",
+      "style": "rawstyle",
+      "energy": "dark",
+      "weight": 0.82,
+      "recency_score": 0.88,
+      "interval_pattern": [0, 0, -2, 0, -3, -2, 0, -5],
+      "rhythm_pattern": [1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0],
+      "octave_range": [-2, -1],
+      "notes": "Low dark raw with repetition"
+    },
+    {
+      "id": "hard_trance_lead_01",
+      "style": "hard_trance",
+      "energy": "high",
+      "weight": 0.65,
+      "recency_score": 0.7,
+      "interval_pattern": [0, 4, 7, 9, 7, 4, 0, 4],
+      "rhythm_pattern": [1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1],
+      "octave_range": [0, 2],
+      "notes": "High energy trance-influenced hardstyle lead"
+    },
+    {
+      "id": "triplet_raw_01",
+      "style": "rawstyle",
+      "energy": "aggressive",
+      "weight": 0.9,
+      "recency_score": 0.95,
+      "interval_pattern": [0, -1, 0, -2, 0, -1, -3, 0],
+      "rhythm_pattern": [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+      "triplet_feel": true,
+      "octave_range": [-1, 0],
+      "notes": "Modern triplet-based raw pattern"
+    },
+    {
+      "id": "melodic_raw_01",
+      "style": "melodic_rawstyle",
+      "energy": "medium",
+      "weight": 0.78,
+      "recency_score": 0.83,
+      "interval_pattern": [0, 2, 3, 5, 3, 2, 0, -2],
+      "rhythm_pattern": [1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0],
+      "octave_range": [-1, 1],
+      "notes": "Melodic rawstyle hybrid"
+    }
+  ]
+}

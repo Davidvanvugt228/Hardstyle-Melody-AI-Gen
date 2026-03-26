@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "profiles": {
+    "rawstyle": {
+      "bpm_range": [150, 165],
+      "typical_bpm": 158,
+      "lead_characteristics": {
+        "interval_preference": "minor_seconds_and_fourths",
+        "octave_jumps": "frequent",
+        "phrase_length_bars": [2, 4],
+        "density": "medium_sparse",
+        "velocity_range": [85, 127],
+        "preferred_scales": ["phrygian", "natural_minor", "harmonic_minor"]
+      },
+      "chord_characteristics": {
+        "style": "power_stabs",
+        "duration_style": "short",
+        "voicing": "root_fifth",
+        "progression_feel": "dark_driving"
+      },
+      "pad_characteristics": {
+        "density": "sparse",
+        "attack": "medium",
+        "sustain": "long",
+        "role": "atmosphere",
+        "preferred_intervals": [0, 7, 12, 19]
+      }
+    },
+    "euphoric": {
+      "bpm_range": [155, 170],
+      "typical_bpm": 163,
+      "lead_characteristics": {
+        "interval_preference": "thirds_and_sixths",
+        "octave_jumps": "occasional",
+        "phrase_length_bars": [4, 8],
+        "density": "medium_dense",
+        "velocity_range": [75, 110],
+        "preferred_scales": ["natural_minor", "dorian", "aeolian"]
+      },
+      "chord_characteristics": {
+        "style": "lush_chords",
+        "duration_style": "long",
+        "voicing": "full_triads",
+        "progression_feel": "uplifting_minor"
+      },
+      "pad_characteristics": {
+        "density": "medium",
+        "attack": "slow",
+        "sustain": "very_long",
+        "role": "harmonic_bed",
+        "preferred_intervals": [0, 4, 7, 12, 16, 19]
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "progressions": [
+    {
+      "id": "minor_raw_power",
+      "style": "rawstyle",
+      "weight": 0.9,
+      "recency_score": 0.92,
+      "degrees": [1, 6, 3, 7],
+      "quality": ["minor", "major", "minor", "major"],
+      "notes": "i-VI-III-VII - Classic rawstyle minor power progression"
+    },
+    {
+      "id": "dark_descending",
+      "style": "rawstyle",
+      "weight": 0.85,
+      "recency_score": 0.88,
+      "degrees": [1, 7, 6, 5],
+      "quality": ["minor", "major", "major", "major"],
+      "notes": "i-VII-VI-V descending bass line feel"
+    },
+    {
+      "id": "euphoric_lift",
+      "style": "euphoric",
+      "weight": 0.8,
+      "recency_score": 0.82,
+      "degrees": [1, 3, 6, 7],
+      "quality": ["minor", "major", "major", "major"],
+      "notes": "i-III-VI-VII uplifting hardstyle progression"
+    },
+    {
+      "id": "raw_phrygian",
+      "style": "rawstyle",
+      "weight": 0.88,
+      "recency_score": 0.9,
+      "degrees": [1, 2, 1, 7],
+      "quality": ["minor", "major", "minor", "major"],
+      "notes": "Phrygian flavor - very dark rawstyle"
+    },
+    {
+      "id": "power_minor",
+      "style": "both",
+      "weight": 0.75,
+      "recency_score": 0.78,
+      "degrees": [1, 4, 6, 3],
+      "quality": ["minor", "minor", "major", "major"],
+      "notes": "i-iv-VI-III versatile minor"
+    },
+    {
+      "id": "dim_tension",
+      "style": "rawstyle",
+      "weight": 0.7,
+      "recency_score": 0.75,
+      "degrees": [1, 2, 7, 1],
+      "quality": ["minor", "diminished", "major", "minor"],
+      "notes": "Tension-release with diminished ii"
+    }
+  ],
+  "voicing_rules": {
+    "pad_spread": "wide",
+    "chord_inversion_probability": 0.3,
+    "add_9th_probability": 0.25,
+    "sus2_probability": 0.2,
+    "rawstyle_stabs": {
+      "duration_beats": 0.25,
+      "velocity_range": [80, 110],
+      "rhythm_density": "sparse"
+    }
+  }
+}
